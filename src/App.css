@@ -1,42 +1,183 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.app-heading {
+  color: #020246;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
   text-align: center;
+
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-heading-description {
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  margin: 0 auto;
+
+  width: 37.5%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status-indicator {
+  margin-top: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.progress-list {
+  list-style: none;
+
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  width: 30%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-top: 0.75rem;
+  margin-bottom: 3rem;
+
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+.curent-status {
+  font-size: 0.8rem;
 }
 
-.read-the-docs {
-  color: #888;
+.payment {
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 1.1rem;
+
+  width: 45%;
+
+  /* BOX-SHADOW */
+  box-shadow: 12px 12px 36px 6px rgba(2, 2, 70, 0.12);
+
+  padding: 2.5rem 2rem;
+}
+
+.pay-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.payment-plan {
+  display: flex;
+  align-items: start;
+
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+
+  border: rgb(235, 235, 235) solid 1px;
+  border-radius: 1rem;
+}
+
+.selected-plan {
+  background-color: rgb(234, 235, 247);
+
+  color: #020246;
+}
+
+.pay-description > * {
+  margin: 0;
+}
+
+.radio-inputs {
+  margin: 0;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.pay-description {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pay-desc-top {
+  padding-bottom: 0.35rem;
+}
+
+.pay-footer {
+  display: flex;
+  align-items: center;
+
+  height: max-content;
+
+  margin-top: 2.25rem;
+}
+
+.footer-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  margin: 0;
+  padding: 0.6rem 3.5rem;
+
+  font-family: "Inter", sans-serif;
+
+  border-radius: 5px;
+  border: 1px rgb(224, 224, 224) solid;
+
+  cursor: pointer;
+}
+
+.pay-footer > button > svg {
+  font-size: 0.9rem;
+}
+
+.back-btn {
+  background-color: white;
+
+  margin: 0;
+  margin-left: 10rem;
+
+  box-shadow: 6.2px 6.2px 18.6px rgba(2, 2, 70, 0.15);
+}
+
+.next-btn {
+  margin-left: 1.75rem;
+
+  background-color: #020246;
+
+  color: white;
+}
+
+/* .status-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 27.5%;
+
+  margin: 0 auto;
+  padding: 0;
+} */
+
+.status-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-indicator > img {
+  width: 1.75rem;
+  height: 1.75rem;
 }
